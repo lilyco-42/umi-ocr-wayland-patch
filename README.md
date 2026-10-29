@@ -6,6 +6,14 @@
 >
 > 本补丁不改动上游源码仓库，只对已解压的 Linux 发行包打一个 Python 补丁，让截图走桌面自带的截图工具。
 
+## 效果
+
+打完补丁后，在 KDE Plasma Wayland 会话下点「截图 OCR」，截图正常、文字正常识别：
+
+<img src="docs/screenshot-wayland-ocr.png" alt="Umi-OCR 在 KDE Plasma Wayland 下截图 OCR 成功" width="820">
+
+> 上图：CachyOS + KDE Plasma 6.8.2 Wayland，Umi-OCR 2.1.5 通过 spectacle 后端截取全屏，识别出屏幕上的真实文字（耗时 2.90s，置信度 0.78）。
+
 ## 问题现象
 
 在 Wayland 会话中点击「截图 OCR」，会出现：
